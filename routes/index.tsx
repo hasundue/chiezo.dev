@@ -1,24 +1,26 @@
 import { Head } from "$fresh/runtime.ts";
-import Counter from "../islands/Counter.tsx";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>chiezo.dev</title>
+        <link
+          rel="stylesheet"
+          href="https://esm.sh/simpledotcss@v2.2.0/simple.min.css"
+        />
       </Head>
       <div>
-        <img
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
+        <h2>chiezo.dev</h2>
+        <p>Powered by:</p>
+        <ul>
+          <li><a href="https://deno.land/deploy">Deno Deploy</a></li>
+          <li><a href="https://fresh.deno.dev">Fresh</a></li>
+          <li><a href="https://simplecss.org">Simple.css</a></li>
+        </ul>
         <p>
-          Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-          file, and refresh.
+          <a href="https://github.com/hasundue/chiezo.dev">Source (GitHub)</a><br />
         </p>
-        <Counter start={3} />
       </div>
     </>
   );
