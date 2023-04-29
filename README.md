@@ -1,11 +1,9 @@
-# fresh project
+# chiezo.dev
 
-### Usage
+My personal website powered by
 
-Start the project:
+- [Deno Deploy](https://deno.land/deploy)
+- [Fresh](https://fresh.deno.dev)
+- [Simple.css](https://simplecss.org)
 
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+Deployment: [chiezo.dev](https://chiezo.dev)
