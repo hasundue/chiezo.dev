@@ -11,8 +11,11 @@ export async function handler(
   const resp = await ctx.next();
   const url = new URL(req.url);
 
-  // Allow CORS for nostr.json
-  if (url.pathname === "/.well-known/nostr.json") {
+  // Allow CORS for images and nostr.json
+  if (
+    url.pathname === "/.well-known/nostr.json" ||
+    url.pathname.startsWith("/images/")
+  ) {
     resp.headers.set("Access-Control-Allow-Origin", "*");
   }
 
